@@ -11,14 +11,13 @@ export class AppComponent implements OnInit {
   faceSnaps!: FaceSnap[];
 
   ngOnInit(){
-<<<<<<< HEAD
     this.faceSnaps = [
       {
         title: "Truc Muche",
         description: "Un mec random",
         imageUrl: "https://www.placecage.com/c/400/400",
         createdDate: new Date(),
-        snaps: 100,
+        snaps: 0,
         location: "Los Angeles"
       },
       {
@@ -37,32 +36,5 @@ export class AppComponent implements OnInit {
         snaps: 0
       }
     ];
-=======
-    this.mySnap = {
-      title: "Truc Muche",
-      description: "Un mec random",
-      imageUrl: "https://www.placecage.com/c/400/400",
-      createdDate: new Date(),
-      snaps: 0,
-      location: "Los Angeles"
-    };
-
-    this.myOtherSnap = {
-      title: "Une inconnue",
-      description: "Une photo générée par une IA",
-      imageUrl: "https://faces-img.xcdn.link/image-lorem-face-296.jpg",
-      createdDate: new Date(),
-      snaps: 0,
-      location: "Inconnu"
-    };
-
-    this.myLastSnap = {
-      title: "Un visage qui n'existe pas",
-      description: "Un autre visage créé par une IA",
-      imageUrl: "https://faces-img.xcdn.link/image-lorem-face-160.jpg",
-      createdDate: new Date(),
-      snaps: 0
-    };
->>>>>>> 64777d5520d5592ba6e4261fd790cf9f5dce3850
   }
 }
