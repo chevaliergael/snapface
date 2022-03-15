@@ -1,11 +1,42 @@
 .face-snap-card {
+    background-color: #F0F0F0;
     width: 35%;
-    border: 1px solid #AAAAAA;
+    border: 1px solid rgba($color: #AAAAAA, $alpha: 0.3);
     border-radius: 1em;
-    box-shadow: 2px 2px 2px 1px rgba($color: #A0A0A0, $alpha: 1.0);
+    box-shadow: 2px 2px 2px 1px rgba($color: #A0A0A0, $alpha: 0.5);
     padding: 2em;
-    margin: 1.5em;
+    margin: 1.5em auto;
     img{
         width: 100%;
+    }
+    button{
+        background: transparent;
+        border: none;
+        border-radius: 10px;
+        padding: 5px 10px;
+        cursor: pointer;
+        box-shadow: #a1a1a1 3px 3px 5px 1px;
+        font-weight: 500;
+        margin-right: 0.3em;
+        outline: none;
+        &:hover{
+            transform: scale(1.05);
+        }
+        &:active{
+            transform: translate(1px, 1px);
+            box-shadow: #a1a1a1 0 0 5px;
+        }
+    }
+}
+
+.snapped{
+    box-shadow: 0 0 5px 2px rgba($color: #3e7e3e, $alpha: 0.3);
+    background-color: #e1ece1;
+
+    button{
+        box-shadow: 0 0 5px 2px rgba($color: #3e7e3e, $alpha: 0.3);
+        &:active{
+            box-shadow: #3e7e3e 0 0 5px;
+        }
     }
 }
