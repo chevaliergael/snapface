@@ -12,26 +12,30 @@ export class AppComponent implements OnInit {
   myLastSnap!: FaceSnap;
 
   ngOnInit(){
-    this.mySnap = new FaceSnap(
-      "Truc Muche",
-      "Un mec random",
-      "https://www.placecage.com/c/400/400",
-      new Date(),
-      0
-    );
-    this.myOtherSnap = new FaceSnap(
-      "Une inconnue",
-      "Une photo générée par une IA",
-      "https://faces-img.xcdn.link/image-lorem-face-296.jpg",
-      new Date(),
-      0
-    )
-    this.myLastSnap = new FaceSnap(
-      "Un visage qui n'existe pas",
-      "Un autre visage créé par une IA",
-      "https://faces-img.xcdn.link/image-lorem-face-160.jpg",
-      new Date(),
-      0
-    )
+    this.mySnap = {
+      title: "Truc Muche",
+      description: "Un mec random",
+      imageUrl: "https://www.placecage.com/c/400/400",
+      createdDate: new Date(),
+      snaps: 0,
+      location: "Los Angeles"
+    };
+
+    this.myOtherSnap = {
+      title: "Une inconnue",
+      description: "Une photo générée par une IA",
+      imageUrl: "https://faces-img.xcdn.link/image-lorem-face-296.jpg",
+      createdDate: new Date(),
+      snaps: 0,
+      location: "Inconnu"
+    };
+
+    this.myLastSnap = {
+      title: "Un visage qui n'existe pas",
+      description: "Un autre visage créé par une IA",
+      imageUrl: "https://faces-img.xcdn.link/image-lorem-face-160.jpg",
+      createdDate: new Date(),
+      snaps: 0
+    };
   }
 }
