@@ -1,0 +1,26 @@
+.landing-container{
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: inherit;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            transform-origin: 0 0;
+            transform: scaleX(0);
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #222222;
+            z-index: -1;
+            transition: transform .3s;
+        }
+        &:hover::after{
+            cursor: pointer;
+            transform: scaleX(1);
+        }
+    }
+}
+   
