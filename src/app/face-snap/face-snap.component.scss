@@ -9,24 +9,6 @@
     img{
         width: 100%;
     }
-    button{
-        background: transparent;
-        border: none;
-        border-radius: 10px;
-        padding: 5px 10px;
-        cursor: pointer;
-        box-shadow: #a1a1a1 3px 3px 5px 1px;
-        font-weight: 500;
-        margin-right: 0.3em;
-        outline: none;
-        &:hover{
-            transform: scale(1.05);
-        }
-        &:active{
-            transform: translate(1px, 1px);
-            box-shadow: #a1a1a1 0 0 5px;
-        }
-    }
 }
 
 .snapped{
